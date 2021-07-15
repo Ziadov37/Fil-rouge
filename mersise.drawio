@@ -1,0 +1,114 @@
+<mxfile>
+    <diagram id="MAl58hCJczAJzwbCAdue" name="Page-1">
+        <mxGraphModel dx="883" dy="379" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="Admin" style="swimlane;" vertex="1" parent="1">
+                    <mxGeometry x="334" y="160" width="160" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="ID&lt;br&gt;FULL NAME&lt;br&gt;EMAIL&lt;br&gt;PASSWORD" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="2">
+                    <mxGeometry x="40" y="60" width="80" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="Users" style="swimlane;" vertex="1" parent="1">
+                    <mxGeometry x="120" y="360" width="160" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="Id&lt;br&gt;Full name&lt;br&gt;Email&lt;br&gt;Password&lt;br&gt;Adress&lt;br&gt;CIN&lt;br&gt;N.tel&lt;br&gt;&lt;br&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="3">
+                    <mxGeometry x="45" y="40" width="70" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="4" target="3">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="O.N" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="18">
+                    <mxGeometry x="0.8594" y="2" relative="1" as="geometry">
+                        <mxPoint y="1" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="20" value="0.N" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="18">
+                    <mxGeometry x="-0.8792" y="3" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="4" value="Visiteur" style="swimlane;startSize=23;" vertex="1" parent="1">
+                    <mxGeometry x="360" y="600" width="160" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="ID&lt;br&gt;Full name&lt;br&gt;Email&lt;br&gt;Password" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="4">
+                    <mxGeometry x="45" y="50" width="70" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="Category" style="swimlane;" vertex="1" parent="1">
+                    <mxGeometry x="560" y="360" width="160" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="ID&lt;br&gt;Name&lt;br&gt;Photo" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="5">
+                    <mxGeometry x="55" y="55" width="50" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="" style="endArrow=classic;startArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="3" target="5">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="240" y="490" as="sourcePoint"/>
+                        <mxPoint x="360" y="440" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="16" value="1.N" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="13">
+                    <mxGeometry x="0.7767" y="-1" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="17" value="1.1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="13">
+                    <mxGeometry x="-0.7533" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="14" value="category" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="390" y="420" width="70" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="Note" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="155" y="600" width="90" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="MCD" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="20" y="50" width="40" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="MLD" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="20" y="850" width="40" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="Admin" style="swimlane;" vertex="1" parent="1">
+                    <mxGeometry x="334" y="980" width="160" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="ID&lt;br&gt;FULL NAME&lt;br&gt;EMAIL&lt;br&gt;PASSWORD" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="24">
+                    <mxGeometry x="40" y="60" width="80" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="Users" style="swimlane;" vertex="1" parent="1">
+                    <mxGeometry x="120" y="1169" width="160" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="Id&lt;br&gt;Full name&lt;br&gt;Email&lt;br&gt;Password&lt;br&gt;Adress&lt;br&gt;CIN&lt;br&gt;N.tel&lt;br&gt;id_category ( FK )" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="26">
+                    <mxGeometry x="25" y="40" width="110" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="28" target="26">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="Category" style="swimlane;" vertex="1" parent="1">
+                    <mxGeometry x="560" y="1169" width="160" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="ID&lt;br&gt;Name&lt;br&gt;Photo" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="28">
+                    <mxGeometry x="55" y="55" width="50" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="31" target="35">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" value="Visiteur" style="swimlane;startSize=23;" vertex="1" parent="1">
+                    <mxGeometry x="480" y="1440" width="160" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="32" value="ID&lt;br&gt;Full name&lt;br&gt;Email&lt;br&gt;Password" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="31">
+                    <mxGeometry x="45" y="50" width="70" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="35" target="26">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="35" value="Vote" style="swimlane;startSize=23;" vertex="1" parent="1">
+                    <mxGeometry x="120" y="1440" width="160" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" value="id_visiteur (FK,PK)&amp;nbsp;&lt;br&gt;id_user (FK PK)&lt;br&gt;number *" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;" vertex="1" parent="35">
+                    <mxGeometry x="20" y="55" width="120" height="50" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
