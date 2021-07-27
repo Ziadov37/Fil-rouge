@@ -53,8 +53,7 @@
                         </div>
                         <div class="flex">
                             <div class="w-64 h-64 mr-10 bg-green-500">
-                                <img class="h-64 rounded-full"
-                                    src="{{ $post->profile_image }}" />
+                                <img class="h-64 rounded-full" src="{{ $post->profile_image }}" />
                             </div>
                             <div class="flex flex-col">
                                 <span class="mb-6 text-5xl"><a href="">{{ $post->user->name }}</a></span>
@@ -69,6 +68,22 @@
                                     3 projects
                                 </span>
                             </div>
+
+                        </div>
+                        <div class="flex items-center">
+                            @if (!$post->likedBy(auth()->user()))
+                                <form action="{{ route('posts.likes', $post) }}" method="post" class="mr-1">
+                                    @csrf
+                                    <button type="submit" class="text-blue-500">Like</button>
+                                </form>
+                            @else
+                                <form action="{{ route('posts.likes', $post) }}" method="post" class="mr-1">
+                                    @csrf
+                                    @method('DELETE')
+                                    <button type="submit" class="text-blue-500">Unlike</button>
+                                </form>
+                            @endif
+                            <span>{{ $post->likes->count() }} {{ Str::plural('like', $post->likes->count()) }}</span>
                         </div>
 
                     </div>

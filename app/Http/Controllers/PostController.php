@@ -19,20 +19,33 @@ class PostController extends Controller
     public function store(Request $request)
     {
         $this->validate($request, [
-            'body' => 'required'
+            'body' => 'required',
+            'category' => 'required',
+            'profile_image' => 'max:5048'
         ]);
+
+        // $newImageName = time() . '-' . $request->name . '.' . $request->profile_image->extension();
+
+        // $request->profile_image->move(public_path('images'), $newImageName);
 
         // $request->user()->posts()->create([
         //     'body' => $request->body
         // ]);
         Post::create([
+            'name' => $request->input('name'),
             'user_id' => Auth::user()->id,
             'body' => $request->body,
+            'category' => $request->category,
             'profile_image' => $request->profile_image
+
         ]);
 
         // $request->user()->posts()->create($request->only('body'));
 
         return back();
+    }
+
+    public function down()
+    {
     }
 }
