@@ -12,9 +12,9 @@
                 <div>
                     <label for="category">Category :</label>
                     <select name="category" id="category" class="bg-gray-100 border-2 p-2 my-2 rounded-lg">
-                        {{-- @foreach ($categorys as $category) --}}
-                        {{-- <option value="">{{ $category->name }}</option> --}}
-                        {{-- @endforeach --}}
+                        @foreach ($categories as $category)
+                            <option value="{{ $category->id }}">{{ $category->name }}</option>
+                        @endforeach
                     </select>
                 </div>
                 <div>

@@ -29,12 +29,13 @@
                                 U're service </a></button>
                     </li>
                     <li class="p-2">
-                        <button class="bg-blue-500 text-white font-bold py-2 px-4 rounded "><a
-                                href="{{ route('dashboard') }}"> {{ auth()->user()->name }} Profile</a></button>
+                        <button class="bg-blue-500 text-white font-bold py-2 px-4 rounded "><a href="">
+                                {{ auth()->user()->name }}
+                                Profile</a></button>
                     </li>
                     {{-- <li>
-                    <a href="" class="p-3"></a>
-                </li> --}}
+                        <a href="" class="p-3"></a>
+                    </li> --}}
                     <li>
                         <form action="{{ route('logout') }}" method="post" class=" inline">
                             @csrf
@@ -57,6 +58,24 @@
         </nav>
         @yield('content')
     </div>
-</body>
+    {{-- </body>
+
+{{-- <body class="antialiased bg-gray-200">
+    <header class="lg:px-16 px-6 bg-whithe flex flex-wrap items-center lg:py-0 py-2">
+        <div class="flex-1 flex justify-between items-center">
+            <a href="">
+                <svg></svg>
+            </a>
+            <label for="menu-toggle" class="cursor-pointer lg:hidden block"><svg>
+
+                </svg>
+
+            </label>
+            <input type="checkbox" class="hidden" id="menu-toggle">
+        </div>
+
+    </header>
+
+</body> --}}
 
 </html>
