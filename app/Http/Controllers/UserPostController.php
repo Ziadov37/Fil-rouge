@@ -13,8 +13,8 @@ class UserPostController extends Controller
     public function index(User $user)
     {
         // $posts = $user->posts()->with(['user', 'likes'])->paginate(20);
-        $posts = Post::where('user_id', Auth::user()->id)->orderBy('id', 'DESC')->get();
-        return view('dashboard', [
+        $posts = Post::where('user_id', $user->id)->orderBy('id', 'DESC')->get();
+        return view('users.posts.index', [
             'user' => $user,
             'posts' => $posts
         ]);

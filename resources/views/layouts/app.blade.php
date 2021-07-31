@@ -33,9 +33,7 @@
                                 {{ auth()->user()->name }}
                                 Profile</a></button>
                     </li>
-                    {{-- <li>
-                        <a href="" class="p-3"></a>
-                    </li> --}}
+
                     <li>
                         <form action="{{ route('logout') }}" method="post" class=" inline">
                             @csrf

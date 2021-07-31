@@ -28,13 +28,6 @@ class PostController extends Controller
             'profile_image' => 'max:5048'
         ]);
 
-        // $newImageName = time() . '-' . $request->name . '.' . $request->profile_image->extension();
-
-        // $request->profile_image->move(public_path('images'), $newImageName);
-
-        // $request->user()->posts()->create([
-        //     'body' => $request->body
-        // ]);
         $image = $request->file('profile_image')->store('/posts/thumbnail/', 'public');
         Post::create([
             'name' => $request->input('name'),
@@ -44,8 +37,6 @@ class PostController extends Controller
             'profile_image' => $image
 
         ]);
-
-        // $request->user()->posts()->create($request->only('body'));
 
         return back();
     }
