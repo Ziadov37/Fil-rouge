@@ -12,6 +12,7 @@ class PostController extends Controller
 {
     public function index()
     {
+        // :: static function //
         $posts = Post::paginate(2);
         $categories = Category::get();
 
@@ -37,8 +38,7 @@ class PostController extends Controller
             'profile_image' => $image
 
         ]);
-
-        return back();
+        return redirect()->route("home");
     }
 
     public function down()
