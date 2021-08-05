@@ -41,7 +41,9 @@
             @foreach ($posts as $post)
                 <x-post :post="$post" />
             @endforeach
-            <div class="pagination" style="    margin: -48px 252px; padding: 41px;"> {{ $posts->links() }}</div>
+            <div class="grid justify-items-center">
+                <div class="max-w-3/4 "> {{ $posts->links() }}</div>
+            </div>
         @else
             <p>nop</p>
         @endif

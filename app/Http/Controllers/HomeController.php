@@ -10,7 +10,7 @@ class HomeController extends Controller
 {
     public function index()
     {
-        $posts = Post::paginate(3);
+        $posts = Post::paginate(4);
         $data = array(
             'posts' => $posts
         );
