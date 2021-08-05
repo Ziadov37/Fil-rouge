@@ -112,12 +112,13 @@
                                             class="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500 @error('name') border-red-500 @enderror"
                                             value="{{ old('name') }}">
 
-                                        @error('name')
-                                            <div class="text-red-500 mt-2 text-sm">
-                                                {{ $message }}
-                                            </div>
-                                        @enderror
+
                                     </div>
+                                    @error('name')
+                                        <div class="text-red-500 mt-2 text-sm">
+                                            {{ $message }}
+                                        </div>
+                                    @enderror
                                 </div>
                                 <div class="w-1/2 px-3 mb-5">
                                     <label for="username" class="text-xs font-semibold px-1">UserName</label>
@@ -129,12 +130,13 @@
                                         <input type="text" name="username" id="username"
                                             class="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500 @error('username') border-red-500 @enderror"
                                             placeholder="Your UserName" value="{{ old('username') }}">
-                                        @error('username')
-                                            <div class=" text-red-500 mt-2 text-sm">
-                                                {{ $message }}
-                                            </div>
-                                        @enderror
+
                                     </div>
+                                    @error('username')
+                                        <div class=" text-red-500 mt-2 text-sm">
+                                            {{ $message }}
+                                        </div>
+                                    @enderror
                                 </div>
                             </div>
                             <div class="flex -mx-3">
@@ -148,12 +150,13 @@
                                         <input type="email" name="email" id="email"
                                             class="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500 @error('email') border-red-500 @enderror"
                                             placeholder="ziad@example.com" value="{{ old('email') }}">
-                                        @error('email')
-                                            <div class=" text-red-500 mt-2 text-sm">
-                                                {{ $message }}
-                                            </div>
-                                        @enderror
+
                                     </div>
+                                    @error('email')
+                                        <div class=" text-red-500 mt-2 text-sm">
+                                            {{ $message }}
+                                        </div>
+                                    @enderror
                                 </div>
                             </div>
                             <div class="flex -mx-3">
@@ -167,12 +170,13 @@
                                         <input type="password" name="password" id="password"
                                             class="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500 @error('password') border-red-500 @enderror"
                                             placeholder="************">
-                                        @error('password')
-                                            <div class=" text-red-500 mt-2 text-sm">
-                                                {{ $message }}
-                                            </div>
-                                        @enderror
+
                                     </div>
+                                    @error('password')
+                                        <div class=" text-red-500 mt-2 text-sm">
+                                            {{ $message }}
+                                        </div>
+                                    @enderror
                                 </div>
                             </div>
                             <div class="flex -mx-3">
