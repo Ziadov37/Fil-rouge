@@ -66,7 +66,7 @@
         </div>
         <div class="flex sm:flex-1 flex-col gap-2 p-1">
             <h1 class="text-lg sm:text-xl font-semibold  text-gray-600">
-                This is the title for your card. This is really cool
+                {{ $post->name }}
             </h1>
             <p class="text-gray-500 text-sm sm:text-base line-clamp-3">
                 {{ $post->body }}
