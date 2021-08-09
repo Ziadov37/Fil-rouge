@@ -22,6 +22,8 @@ Route::get('/home', [HomeController::class, 'index'])
 
 Route::get('/dashboard', [DashboardController::class, 'index'])
     ->name('dashboard')->middleware('auth');
+Route::get('/delete/{id}', [DashboardController::class, 'delete'])
+    ->name('delete');
 
 Route::get('/users/{user:username}/posts', [UserPostController::class, 'index'])->name('users.posts');
 

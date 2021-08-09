@@ -2,10 +2,12 @@
 
 namespace App\Http\Controllers;
 
+
+use App\Models\Post;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Foundation\Auth\User;
 use Illuminate\Support\Facades\Auth;
-use App\Models\Post;
 
 class DashboardController extends Controller
 {
@@ -14,10 +16,6 @@ class DashboardController extends Controller
         $this->middleware((['auth']));
     }
 
-    // public function index()
-    // {
-    //     return view('dashboard');
-    // }
     public function index()
     {
         // dd([$user->name]);
@@ -26,5 +24,16 @@ class DashboardController extends Controller
         return view('dashboard', [
             'posts' => $posts
         ]);
+    }
+
+    public function delete($id)
+    {
+        // $data = Post::find($id);
+        // $data->delete();
+        // return redirect('index');
+
+        $delete = DB::table('posts')
+            ->where('id', $id)->delete();
+        return redirect('dashboard');
     }
 }
